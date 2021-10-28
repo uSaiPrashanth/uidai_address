@@ -31,7 +31,9 @@ def simplify(
         if(input_data[i] is None):
             input_data[i] = 'NA'
         
-    address = " ".join(input_data)
+    
+    input_data = list(map(str,input_data))
+    address = ", ".join(input_data)
     return address
 if __name__ == '__main__':
     # for i in ['one','two',None]:

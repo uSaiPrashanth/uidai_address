@@ -14,7 +14,8 @@ def simplify(
     subdistrict=None,
     district=None,
     state=None,
-    pincode=None
+    pincode=None,
+    **data
 ):
     '''Algorithm to simplify address fields'''
     

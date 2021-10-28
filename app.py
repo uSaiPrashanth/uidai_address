@@ -20,6 +20,8 @@ dictConfig({
 from flask import Flask,request,json
 from algorithm import simplify
 app = Flask(__name__)
+
+
 fields = [
     'house',
     'street',
@@ -31,6 +33,8 @@ fields = [
     'state',
     'pincode'
 ]
+
+
 @app.route("/",methods=['GET','POST'])
 def hello_world():
     data = request.json

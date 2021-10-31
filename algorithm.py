@@ -29,7 +29,7 @@ def simplify(
 
     input_data = [house, street, locality, landmark, village, subdistrict, district, state, pincode]
     for i in range(len(input_data)):
-        if(input_data[i] is None):
+        if((input_data[i] is None) or (input_data[i] == '')):
             input_data[i] = 'NA'
         
     
